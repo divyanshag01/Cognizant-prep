@@ -1,0 +1,14 @@
+# Analysis (Time Complexity)
+
+* Add Product: O(1) because HashMap inserts the product directly using productId.
+* Update Product: O(1) because the product can be accessed and updated directly using productId.
+* Delete Product: O(1) because HashMap removes the product directly using productId.
+* In the worst case, these operations can take O(n) if many hash collisions occur.
+
+# Optimization
+
+* Use HashMap instead of ArrayList for faster operations.
+* Use productId as a unique key for direct access.
+* Ensure every product has a unique productId to avoid duplicate records.
+* Efficient hashing helps reduce collisions and improves performance.
+* This approach makes the system suitable for handling large inventories.
